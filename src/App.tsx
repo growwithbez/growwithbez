@@ -37,7 +37,7 @@ function AuthKitHeroBg() {
   // Mimic AuthKit: 100 subtle dots (fine stars), random but seeded, with blue/white/gray hues and soft opacity
   const DOTS_COUNT = 100;
   const STAR_SEED = 2025;
-  function prng(seed) {
+  function prng(seed:number) {
     const x = Math.sin(seed) * 10000;
     return x - Math.floor(x);
   }
@@ -232,7 +232,7 @@ function Contact() {
       <form
         onSubmit={async (e) => {
           e.preventDefault();
-          const form = new FormData(e.target);
+          const form = new FormData(e.target as HTMLFormElement);
           const res = await fetch('/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
