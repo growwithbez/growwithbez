@@ -168,23 +168,24 @@ function About() {
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-20 justify-center">
         <img
           src="/growwithbez.jpg"
-          alt="Bezawit Woldemichael portrait"
+          alt="Portrait of Bezawit Woldemichael, digital strategist and founder of Grow With Bez"
           className="w-52 h-52 rounded-full object-cover border-4 border-[#516bf3] mb-4 md:mb-0 shadow"
           style={{objectPosition:'center'}}
         />
         <div className="flex-1">
           <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-[#B7CDFF] leading-tight">
-            Hey, I’m Bez. A Digital Strategist with a Developer’s Mindset
+            Hi, I’m Bez — Digital Strategist with a Developer’s Mindset
           </h1>
           <p className="text-lg leading-relaxed text-[#C7D2FE] mb-4">
-          <p className="text-lg leading-relaxed text-[#C7D2FE] mb-4">
-            I’m Bezawit Woldemichael. A technical creative with a background in software engineering, now working at the intersection of tech marketing and social media strategy. At Grow With Bez, I help founders and B2B creators build digital brands with clarity, consistency, and content that converts. My work blends strategy, systems, and storytelling. No fluff.
+            I’m Bezawit Woldemichael, a technical creative with roots in software engineering — now building at the intersection of tech marketing and social media strategy. At Grow With Bez, I help founders and B2B creators craft digital brands with clarity, consistency, and content that converts. My approach fuses systems, storytelling, and strategy — no fluff, just focus.
           </p>
           <div className="mt-5 flex gap-4">
             <a
               href="#playbook"
               className="px-6 py-2 rounded-full font-semibold bg-[#516bf3] hover:bg-[#3e4b73] text-white transition"
-            >Read My Growth Playbook</a>
+            >
+              Read My Growth Playbook
+            </a>
           </div>
         </div>
       </div>
@@ -247,11 +248,35 @@ function Contact() {
         }}
         className="w-full max-w-lg bg-[#101527]/70 p-8 rounded-2xl border border-[#21294d] shadow-lg flex flex-col gap-5"
       >
-        <input name="name" type="text" required placeholder="Name" className="..." />
-        <input name="email" type="email" required placeholder="Email" className="..." />
-        <textarea name="message" required placeholder="Message" rows={4} className="..." />
-        <button type="submit" className="...">Send</button>
+        <input
+          name="name"
+          type="text"
+          required
+          placeholder="Your Name"
+          className="rounded-md px-4 py-3 bg-[#181e30] border border-[#2f3752] text-[#B7CDFF] focus:ring-2 focus:ring-[#516bf3]"
+        />
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder="Your Email"
+          className="rounded-md px-4 py-3 bg-[#181e30] border border-[#2f3752] text-[#B7CDFF] focus:ring-2 focus:ring-[#516bf3]"
+        />
+        <textarea
+          name="message"
+          required
+          placeholder="Your Message"
+          rows={4}
+          className="rounded-md px-4 py-3 bg-[#181e30] border border-[#2f3752] text-[#B7CDFF] focus:ring-2 focus:ring-[#516bf3]"
+        />
+        <button
+          type="submit"
+          className="py-3 px-7 rounded-full bg-gradient-to-r from-[#516bf3] to-[#7A90D7] text-white font-semibold shadow hover:from-[#7A90D7] hover:to-[#516bf3] transition"
+        >
+          Send
+        </button>
       </form>
+
 
       <div className="flex gap-5 mt-8">
         <a href="https://linkedin.com" className="hover:text-[#516bf3]" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" fill="currentColor"><path d="M18.994 2.006C20.65 2.006 22 3.355 22 5.012V18.99C22 20.646 20.65 21.996 18.994 21.996H5.012c-1.656 0-3.006-1.35-3.006-3.006V5.012C2.006 3.355 3.355 2.006 5.012 2.006H18.994zM8.338 19.172v-7.099H5.993v7.099h2.345zm-1.173-8.077c-.756 0-1.372-.615-1.372-1.372a1.377 1.377 0 012.743 0c0 .757-.616 1.372-1.371 1.372zm12.005 8.077v-3.902c0-2.083-1.12-3.052-2.615-3.052-1.204 0-1.745.662-2.046 1.128v-0.968h-2.343c.03.638 0 7.099 0 7.099H15.12v-3.963c0-.212.016-.423.077-.576.167-.423.547-.86 1.187-.86.838 0 1.174.653 1.174 1.61v3.789h2.343z"/></svg></a>
